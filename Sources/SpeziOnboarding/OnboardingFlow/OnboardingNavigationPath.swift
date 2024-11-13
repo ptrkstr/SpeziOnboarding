@@ -190,6 +190,11 @@ public class OnboardingNavigationPath {
         path.removeLast()
     }
 
+    /// Removes all path components
+    public func reset() {
+        path.removeLast(path.count)
+    }
+
     /// Internal function used to update the onboarding steps within the ``OnboardingNavigationPath`` if the
     /// result builder associated with the ``OnboardingStack`` is reevaluated.
     ///
